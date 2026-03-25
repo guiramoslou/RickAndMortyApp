@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA000000000000000000B001 /* RickAndMortyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A001 /* RickAndMortyApp.swift */; };
+		AA000000000000000000B002 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A002 /* Character.swift */; };
+		AA000000000000000000B003 /* PaginatedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A003 /* PaginatedResponse.swift */; };
+		AA000000000000000000B004 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A004 /* CharacterRepository.swift */; };
+		AA000000000000000000B005 /* FetchCharactersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A005 /* FetchCharactersUseCase.swift */; };
+		AA000000000000000000B006 /* FetchCharacterDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A006 /* FetchCharacterDetailUseCase.swift */; };
+		AA000000000000000000B007 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A007 /* NetworkError.swift */; };
+		AA000000000000000000B008 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A008 /* NetworkService.swift */; };
+		AA000000000000000000B009 /* URLSessionNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A009 /* URLSessionNetworkService.swift */; };
+		AA000000000000000000B00A /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A00A /* APIEndpoint.swift */; };
+		AA000000000000000000B00B /* CharacterRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A00B /* CharacterRepositoryImpl.swift */; };
+		AA000000000000000000B00C /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A00C /* CharacterListViewModel.swift */; };
+		AA000000000000000000B00D /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A00D /* CharacterListView.swift */; };
+		AA000000000000000000B00E /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A00E /* CharacterDetailViewModel.swift */; };
+		AA000000000000000000B00F /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A00F /* CharacterDetailView.swift */; };
+		AA000000000000000000B010 /* CharacterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A010 /* CharacterRowView.swift */; };
+		AA000000000000000000B011 /* StatusBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A011 /* StatusBadgeView.swift */; };
+		AA000000000000000000B012 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A012 /* ErrorView.swift */; };
+		AA000000000000000000B013 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A013 /* EmptyStateView.swift */; };
+		AA000000000000000000B014 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A014 /* LoadingView.swift */; };
+		AA000000000000000000B015 /* FilterChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A015 /* FilterChip.swift */; };
+		AA000000000000000000B016 /* DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A016 /* DetailRow.swift */; };
+		AA000000000000000000B017 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A017 /* DependencyContainer.swift */; };
+		AA000000000000000000B018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A018 /* Assets.xcassets */; };
+		AA000000000000000000B019 /* CharacterListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A019 /* CharacterListViewModelTests.swift */; };
+		AA000000000000000000B01A /* CharacterRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A01A /* CharacterRepositoryTests.swift */; };
+		AA000000000000000000B01B /* Character+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A01B /* Character+Mock.swift */; };
+		AA000000000000000000B01C /* MockFetchCharactersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A01C /* MockFetchCharactersUseCase.swift */; };
+		AA000000000000000000B01D /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000A01D /* MockNetworkService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA000000000000000000A001 /* RickAndMortyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyApp.swift; sourceTree = "<group>"; };
+		AA000000000000000000A002 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		AA000000000000000000A003 /* PaginatedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedResponse.swift; sourceTree = "<group>"; };
+		AA000000000000000000A004 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		AA000000000000000000A005 /* FetchCharactersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCharactersUseCase.swift; sourceTree = "<group>"; };
+		AA000000000000000000A006 /* FetchCharacterDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCharacterDetailUseCase.swift; sourceTree = "<group>"; };
+		AA000000000000000000A007 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		AA000000000000000000A008 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AA000000000000000000A009 /* URLSessionNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkService.swift; sourceTree = "<group>"; };
+		AA000000000000000000A00A /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		AA000000000000000000A00B /* CharacterRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryImpl.swift; sourceTree = "<group>"; };
+		AA000000000000000000A00C /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		AA000000000000000000A00D /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		AA000000000000000000A00E /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
+		AA000000000000000000A00F /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		AA000000000000000000A010 /* CharacterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRowView.swift; sourceTree = "<group>"; };
+		AA000000000000000000A011 /* StatusBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBadgeView.swift; sourceTree = "<group>"; };
+		AA000000000000000000A012 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		AA000000000000000000A013 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		AA000000000000000000A014 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		AA000000000000000000A015 /* FilterChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterChip.swift; sourceTree = "<group>"; };
+		AA000000000000000000A016 /* DetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRow.swift; sourceTree = "<group>"; };
+		AA000000000000000000A017 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		AA000000000000000000A018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA000000000000000000A019 /* CharacterListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModelTests.swift; sourceTree = "<group>"; };
+		AA000000000000000000A01A /* CharacterRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryTests.swift; sourceTree = "<group>"; };
+		AA000000000000000000A01B /* Character+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Mock.swift"; sourceTree = "<group>"; };
+		AA000000000000000000A01C /* MockFetchCharactersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetchCharactersUseCase.swift; sourceTree = "<group>"; };
+		AA000000000000000000A01D /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		AA000000000000000000A01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA000000000000000000PROD /* RickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA000000000000000000TEST /* RickAndMortyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA000000000000000000PH03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA000000000000000000PH06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA000000000000000000GR00 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000GR01 /* RickAndMortyApp */,
+				AA000000000000000000GR20 /* RickAndMortyAppTests */,
+				AA000000000000000000GR99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000PROD /* RickAndMortyApp.app */,
+				AA000000000000000000TEST /* RickAndMortyAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR01 /* RickAndMortyApp */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000GR02 /* App */,
+				AA000000000000000000GR03 /* Domain */,
+				AA000000000000000000GR07 /* Data */,
+				AA000000000000000000GR11 /* Presentation */,
+				AA000000000000000000GR19 /* DI */,
+				AA000000000000000000GR18 /* Resources */,
+			);
+			path = RickAndMortyApp;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR02 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000A001 /* RickAndMortyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR03 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000GR04 /* Models */,
+				AA000000000000000000GR05 /* Repositories */,
+				AA000000000000000000GR06 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000A002 /* Character.swift */,
+				AA000000000000000000A003 /* PaginatedResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR05 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000A004 /* CharacterRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR06 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000A005 /* FetchCharactersUseCase.swift */,
+				AA000000000000000000A006 /* FetchCharacterDetailUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR07 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000GR08 /* Network */,
+				AA000000000000000000GR09 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR08 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000A007 /* NetworkError.swift */,
+				AA000000000000000000A008 /* NetworkService.swift */,
+				AA000000000000000000A009 /* URLSessionNetworkService.swift */,
+				AA000000000000000000A00A /* APIEndpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR09 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000A00B /* CharacterRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR11 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000GR12 /* CharacterList */,
+				AA000000000000000000GR13 /* CharacterDetail */,
+				AA000000000000000000GR14 /* Components */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR12 /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000A00C /* CharacterListViewModel.swift */,
+				AA000000000000000000A00D /* CharacterListView.swift */,
+			);
+			path = CharacterList;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR13 /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000A00E /* CharacterDetailViewModel.swift */,
+				AA000000000000000000A00F /* CharacterDetailView.swift */,
+			);
+			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR14 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000A010 /* CharacterRowView.swift */,
+				AA000000000000000000A011 /* StatusBadgeView.swift */,
+				AA000000000000000000A012 /* ErrorView.swift */,
+				AA000000000000000000A013 /* EmptyStateView.swift */,
+				AA000000000000000000A014 /* LoadingView.swift */,
+				AA000000000000000000A015 /* FilterChip.swift */,
+				AA000000000000000000A016 /* DetailRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR18 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000A018 /* Assets.xcassets */,
+				AA000000000000000000A01E /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR19 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000A017 /* DependencyContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR20 /* RickAndMortyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000GR21 /* ViewModelTests */,
+				AA000000000000000000GR22 /* NetworkTests */,
+				AA000000000000000000GR23 /* Helpers */,
+				AA000000000000000000GR24 /* Mocks */,
+			);
+			path = RickAndMortyAppTests;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR21 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000A019 /* CharacterListViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR22 /* NetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000A01A /* CharacterRepositoryTests.swift */,
+			);
+			path = NetworkTests;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR23 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000A01B /* Character+Mock.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000GR24 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000A01C /* MockFetchCharactersUseCase.swift */,
+				AA000000000000000000A01D /* MockNetworkService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA000000000000000000TG01 /* RickAndMortyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000000000000000000CL01 /* Build configuration list for PBXNativeTarget "RickAndMortyApp" */;
+			buildPhases = (
+				AA000000000000000000PH01 /* Sources */,
+				AA000000000000000000PH02 /* Resources */,
+				AA000000000000000000PH03 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RickAndMortyApp;
+			productName = RickAndMortyApp;
+			productReference = AA000000000000000000PROD /* RickAndMortyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA000000000000000000TG02 /* RickAndMortyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000000000000000000CL02 /* Build configuration list for PBXNativeTarget "RickAndMortyAppTests" */;
+			buildPhases = (
+				AA000000000000000000PH04 /* Sources */,
+				AA000000000000000000PH06 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA000000000000000000DEP1 /* PBXTargetDependency */,
+			);
+			name = RickAndMortyAppTests;
+			productName = RickAndMortyAppTests;
+			productReference = AA000000000000000000TEST /* RickAndMortyAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA000000000000000000PROJ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA000000000000000000TG01 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					AA000000000000000000TG02 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AA000000000000000000TG01;
+					};
+				};
+			};
+			buildConfigurationList = AA000000000000000000CL00 /* Build configuration list for PBXProject "RickAndMortyApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA000000000000000000GR00;
+			productRefGroup = AA000000000000000000GR99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA000000000000000000TG01 /* RickAndMortyApp */,
+				AA000000000000000000TG02 /* RickAndMortyAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA000000000000000000PH02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000000000000000000B018 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA000000000000000000PH01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000000000000000000B001 /* RickAndMortyApp.swift in Sources */,
+				AA000000000000000000B002 /* Character.swift in Sources */,
+				AA000000000000000000B003 /* PaginatedResponse.swift in Sources */,
+				AA000000000000000000B004 /* CharacterRepository.swift in Sources */,
+				AA000000000000000000B005 /* FetchCharactersUseCase.swift in Sources */,
+				AA000000000000000000B006 /* FetchCharacterDetailUseCase.swift in Sources */,
+				AA000000000000000000B007 /* NetworkError.swift in Sources */,
+				AA000000000000000000B008 /* NetworkService.swift in Sources */,
+				AA000000000000000000B009 /* URLSessionNetworkService.swift in Sources */,
+				AA000000000000000000B00A /* APIEndpoint.swift in Sources */,
+				AA000000000000000000B00B /* CharacterRepositoryImpl.swift in Sources */,
+				AA000000000000000000B00C /* CharacterListViewModel.swift in Sources */,
+				AA000000000000000000B00D /* CharacterListView.swift in Sources */,
+				AA000000000000000000B00E /* CharacterDetailViewModel.swift in Sources */,
+				AA000000000000000000B00F /* CharacterDetailView.swift in Sources */,
+				AA000000000000000000B010 /* CharacterRowView.swift in Sources */,
+				AA000000000000000000B011 /* StatusBadgeView.swift in Sources */,
+				AA000000000000000000B012 /* ErrorView.swift in Sources */,
+				AA000000000000000000B013 /* EmptyStateView.swift in Sources */,
+				AA000000000000000000B014 /* LoadingView.swift in Sources */,
+				AA000000000000000000B015 /* FilterChip.swift in Sources */,
+				AA000000000000000000B016 /* DetailRow.swift in Sources */,
+				AA000000000000000000B017 /* DependencyContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA000000000000000000PH04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000000000000000000B019 /* CharacterListViewModelTests.swift in Sources */,
+				AA000000000000000000B01A /* CharacterRepositoryTests.swift in Sources */,
+				AA000000000000000000B01B /* Character+Mock.swift in Sources */,
+				AA000000000000000000B01C /* MockFetchCharactersUseCase.swift in Sources */,
+				AA000000000000000000B01D /* MockNetworkService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA000000000000000000DEP1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA000000000000000000TG01 /* RickAndMortyApp */;
+			targetProxy = AA000000000000000000PRX1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		AA000000000000000000PRX1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA000000000000000000PROJ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA000000000000000000TG01;
+			remoteInfo = RickAndMortyApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin XCBuildConfiguration section */
+		AA000000000000000000CF01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA000000000000000000CF02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA000000000000000000CF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = RickAndMortyApp/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rickandmorty.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA000000000000000000CF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = RickAndMortyApp/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rickandmorty.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA000000000000000000CF05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rickandmorty.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RickAndMortyApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RickAndMortyApp";
+			};
+			name = Debug;
+		};
+		AA000000000000000000CF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rickandmorty.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RickAndMortyApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RickAndMortyApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA000000000000000000CL00 /* Build configuration list for PBXProject "RickAndMortyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000000000000000000CF01 /* Debug */,
+				AA000000000000000000CF02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000000000000000000CL01 /* Build configuration list for PBXNativeTarget "RickAndMortyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000000000000000000CF03 /* Debug */,
+				AA000000000000000000CF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000000000000000000CL02 /* Build configuration list for PBXNativeTarget "RickAndMortyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000000000000000000CF05 /* Debug */,
+				AA000000000000000000CF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = AA000000000000000000PROJ /* Project object */;
+}
